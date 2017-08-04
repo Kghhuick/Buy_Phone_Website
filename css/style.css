@@ -8,7 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
   width: 100%;
   border-bottom: 1px solid #E7E5E6;
 }
@@ -45,12 +45,13 @@ header{
   margin-right: 23px;
 }
 
-.box img:nth-child(3){
- width: 22px;
+.box img:nth-child(3) {
+  width: 22px;
   margin-top: 14px;
   margin-left: 7px;
 }
-.box img:nth-child(4){
+
+.box img:nth-child(4) {
   width: 22px;
   margin-top: 12px;
   margin-left: 25px;
@@ -60,4 +61,152 @@ header{
   height: 590px;
   background-image: url("../images/slider.jpg");
   width: 97%;
+}
+
+.box_images img {
+  margin-top: 32px;
+  margin-right: 22px;
+  margin-bottom: 25px;
+}
+
+.box_images img:nth-child(1) {
+  margin-left: -13px;
+}
+
+.box_images img:nth-child(6) {
+  margin-right: 0px;
+}
+
+.box_divs {
+  background-color: #EDEDED;
+  height: 80px;
+  width: 97%;
+}
+
+.small_box {
+  float: left;
+  height: 80PX;
+  width: 140px;
+}
+
+.small_box h3 {
+  margin-top: 35px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.small_box:hover {
+  background-color: #00D000;
+  color: white;
+}
+
+.box_phones {
+  width: 97%:
+}
+
+.small_box_phones {
+  float: left;
+  width: 290px;
+  border: 1px solid red;
+  height: 420px;
+}
+
+.small_box_phones:nth-child(2n+1) {
+  background: rgba(246, 246, 246, 1);
+  background: -moz-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246, 246, 246, 1)), color-stop(58%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+  background: -webkit-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  background: -o-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to right, rgba(246, 246, 246, 1) 0%, rgba(246, 246, 246, 1) 58%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff', GradientType=1);
+}
+
+.small_box_phones:nth-child(2n+2) {
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 34%, rgba(252, 252, 252, 1) 42%, rgba(246, 246, 246, 1) 61%, rgba(237, 237, 237, 1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(34%, rgba(255, 255, 255, 1)), color-stop(42%, rgba(252, 252, 252, 1)), color-stop(61%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 34%, rgba(252, 252, 252, 1) 42%, rgba(246, 246, 246, 1) 61%, rgba(237, 237, 237, 1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 1) 34%, rgba(252, 252, 252, 1) 42%, rgba(246, 246, 246, 1) 61%, rgba(237, 237, 237, 1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 1) 34%, rgba(252, 252, 252, 1) 42%, rgba(246, 246, 246, 1) 61%, rgba(237, 237, 237, 1) 100%);
+}
+
+.visible h4 {
+  margin-left: 20%;
+  margin-top: 15%;
+  margin-bottom: 20%;
+}
+
+.visible>h4:nth-child(3) {
+  margin-left: 30%;
+  font-size: 18px;
+}
+
+.visible img {
+  margin-left: 35%;
+}
+
+.hidden {
+  width: 290px;
+  height: 500px;
+  border: 1px solid red;
+  background-color: #19D618;
+  visibility: hidden;
+  background-image: url("../images/telefon.png");
+  background-repeat: no-repeat;
+  background-position:45% 30%;
+  overflow: visible;
+
+}
+.hidden button{
+  width: 100px;
+  height: 30px;
+  background: white;
+  margin-left: 8%;
+}
+.hidden button:last-of-type{
+  background: black;
+  color: white;
+}
+.hidden button img{
+  width: 50px;
+  height: 15px;
+
+}
+
+.hidden h4 {
+  color:white;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.hidden span {
+  display: inline-block;
+  color: white;
+  margin-left: 17%;
+  font-size: 14px;
+  margin-top: 7px;
+  font-weight:600;
+}
+
+ .hidden > span:nth-child(4){
+  margin-left: 20%;
+}
+.hidden > span:nth-child(6){
+ margin-left: 22%;
+}
+.hidden > span:nth-child(8){
+ margin-left: 22%;
+}
+.hidden > span:nth-child(10){
+ margin-left: 30%;
+}
+.hidden > span:nth-child(12){
+ margin-left: 30%;
+}
+.hidden > h4:last-of-type{
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 18px;
 }
