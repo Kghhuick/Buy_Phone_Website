@@ -148,7 +148,7 @@ header {
 
 .hidden {
   width: 290px;
-  height: 500px;
+  height: 420px;
   border: 1px solid red;
   background-color: #19D618;
   visibility: hidden;
