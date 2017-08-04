@@ -154,28 +154,29 @@ header {
   visibility: hidden;
   background-image: url("../images/telefon.png");
   background-repeat: no-repeat;
-  background-position:45% 30%;
+  background-position: 45% 30%;
   overflow: visible;
-
 }
-.hidden button{
+
+.hidden button {
   width: 100px;
   height: 30px;
   background: white;
   margin-left: 8%;
 }
-.hidden button:last-of-type{
+
+.hidden button:last-of-type {
   background: black;
   color: white;
 }
-.hidden button img{
+
+.hidden button img {
   width: 50px;
   height: 15px;
-
 }
 
 .hidden h4 {
-  color:white;
+  color: white;
   margin-left: 20%;
   margin-top: 10%;
   margin-bottom: 20%;
@@ -187,26 +188,56 @@ header {
   margin-left: 17%;
   font-size: 14px;
   margin-top: 7px;
-  font-weight:600;
+  font-weight: 600;
 }
 
- .hidden > span:nth-child(4){
+.hidden>span:nth-child(4) {
   margin-left: 20%;
 }
-.hidden > span:nth-child(6){
- margin-left: 22%;
+
+.hidden>span:nth-child(6) {
+  margin-left: 22%;
 }
-.hidden > span:nth-child(8){
- margin-left: 22%;
+
+.hidden>span:nth-child(8) {
+  margin-left: 22%;
 }
-.hidden > span:nth-child(10){
- margin-left: 30%;
+
+.hidden>span:nth-child(10) {
+  margin-left: 30%;
 }
-.hidden > span:nth-child(12){
- margin-left: 30%;
+
+.hidden>span:nth-child(12) {
+  margin-left: 30%;
 }
-.hidden > h4:last-of-type{
+
+.hidden>h4:last-of-type {
   margin-top: 50px;
   margin-left: 100px;
   font-size: 18px;
+}
+#load{
+margin-left: 37%;
+width: 250px;
+background-color: #08D308;
+color: white;
+height: 40px;
+margin-top: 20px;
+margin-bottom: 60px;
+}
+footer{
+  background-color: black;
+  width: 100%;
+}
+footer .container img {
+  width: 150px;
+  margin-left: 41%;
+  margin-top: 40px;
+}
+h5{
+  color:white;
+  margin-left: 41%;
+  margin-top: 17px;
+  font-size: 13px;
+  margin-bottom: 40px;
 }
