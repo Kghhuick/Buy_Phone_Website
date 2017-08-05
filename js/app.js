@@ -201,11 +201,11 @@ $(function() {
   }
   };
 
-  stickyNav();
+  stickyNav(); 
 
   $(window).scroll(function() {
     stickyNav();
-  }); 
+  });
 
 
 
