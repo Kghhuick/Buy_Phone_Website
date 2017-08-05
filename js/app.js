@@ -144,6 +144,7 @@ $(function() {
   });
 
    var input = $("<input>");
+   input.attr("placeholder","Wyszukaj...");
    var search = $(".box").find("img").eq(1);
    console.log(search);
    var counter = 0;
@@ -152,6 +153,7 @@ $(function() {
      $(".box ul").hide();
      $(".box img").eq(0).after(input);
      input.css("margin-left","620px");
+
      counter++;
    }else {
      var inp = $(".box input").val();
@@ -166,8 +168,23 @@ $(function() {
     }
     }
    });
- 
 
+   $(".box").on("change","input",function(){
+     var all = $(".visible");
+     $(".small_box_phones").hide();
+     var a = all.find("h4");
+     console.log(a);
+     var inp = $(this).val();
+     console.log(inp);
+     for(var i = 0; i<a.length;i++) {
+       console.log($(a[i]).text());
+         if($(a[i]).text()===inp){
+        $(a[i]).parent().parent().show();
+
+         } 
+
+     }
+   });
 
 
 
