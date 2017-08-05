@@ -143,61 +143,69 @@ $(function() {
     }
   });
 
-   var input = $("<input>");
-   input.attr("placeholder","Wyszukaj...");
-   var search = $(".box").find("img").eq(1);
-   console.log(search);
-   var counter = 0;
-   search.on("click",function(){
-     if(counter % 2 === 0) {
-     $(".box ul").hide();
-     $(".box img").eq(0).after(input);
-     input.css("margin-left","620px");
+  var input = $("<input>");
+  input.attr("placeholder", "Wyszukaj...");
+  var search = $(".box").find("img").eq(1);
+  console.log(search);
+  var counter = 0;
+  search.on("click", function() {
+    if (counter % 2 === 0) {
+      $(".box ul").hide();
+      $(".box img").eq(0).after(input);
+      input.css("margin-left", "620px");
 
-     counter++;
-   }else {
-     var inp = $(".box input").val();
-     console.log(inp);
-     if(inp === "") {
-      $(".box ul").show();
-      $(".box input").remove();
       counter++;
     } else {
-      alert("input field has to be empty if you want hide search icon");
-      counter = counter + 2;
+      var inp = $(".box input").val();
+      console.log(inp);
+      if (inp === "") {
+        $(".box ul").show();
+        $(".box input").remove();
+        counter++;
+      } else {
+        alert("input field has to be empty if you want hide search icon");
+        counter = counter + 2;
+      }
     }
-    }
-   });
+  });
 
-   $(".box").on("change","input",function(){
-     var all = $(".visible");
-     $(".small_box_phones").hide();
-     var a = all.find("h4");
-     console.log(a);
-     var inp = $(this).val();
-     console.log(inp);
-     for(var i = 0; i<a.length;i++) {
-       console.log($(a[i]).text());
-         if($(a[i]).text()===inp){
+  $(".box").on("change", "input", function() {
+    var all = $(".visible");
+    $(".small_box_phones").hide();
+    var a = all.find("h4");
+    console.log(a);
+    var inp = $(this).val();
+    console.log(inp);
+    for (var i = 0; i < a.length; i++) {
+      console.log($(a[i]).text());
+      if ($(a[i]).text() === inp) {
         $(a[i]).parent().parent().show();
 
-         } 
+      }
 
-     }
-   });
-
-
+    }
+  });
 
 
 
 
+  var stickyNavTop = $('.nav').offset().top;
 
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
 
+  if (scrollTop > stickyNavTop) {
+      $('.nav').addClass('sticky');
+  } else {
+      $('.nav').removeClass('sticky');
+  }
+  };
 
+  stickyNav();
 
-
-
-
+  $(window).scroll(function() {
+    stickyNav();
+  }); 
 
 
 
